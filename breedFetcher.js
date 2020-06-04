@@ -13,7 +13,7 @@ const fetchBreedDescription = function(breedName, callback) {
     if (data.length) {
       callback(null, data[0].description);
     } else {
-      callback('Breed Not Found', null);
+      callback(null, 'Breed Not Found');
     }
   });
 };
